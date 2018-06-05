@@ -72,7 +72,7 @@ for run in args.runs:
         print run,"error not found"
         
 
-path_names=["HLT_CaloJet10_NoJetID_HCALPhase1","HLT_CaloJet10_NoJetID","HLT_CaloJet20_NoJetID_HCALPhase1","HLT_CaloJet20_NoJetID","HLT_CaloJet500_NoJetID","HLT_CaloJet50_NoJetID_HCALPhase1","HLT_CaloJet50_NoJetID","HLT_HT200","HLT_L1DoubleIsoTau32er","HLT_L1DoubleJetC50","HLT_L1DoubleMu0","HLT_L1SingleEG10","HLT_L1SingleEG18","HLT_L1SingleEG5","HLT_L1SingleJet200","HLT_L1SingleJet35","HLT_L1SingleMu3","HLT_L1SingleMu5","HLT_L1SingleMu7","HLT_L1SingleMuCosmics","HLT_L1SingleMuOpen_DT","HLT_L1SingleMuOpen","HLT_L2DoubleMu23_NoVertex","HLT_L2Mu10_NoVertex_NoBPTX3BX","HLT_L2Mu10_NoVertex_NoBPTX","HLT_L2Mu40_NoVertex_3Sta_NoBPTX3BX","HLT_L2Mu45_NoVertex_3Sta_NoBPTX3BX","HLT_Photon22","HLT_UncorrectedJetE30_NoBPTX3BX","HLT_UncorrectedJetE30_NoBPTX","HLT_UncorrectedJetE60_NoBPTX3BX","HLT_UncorrectedJetE70_NoBPTX3BX"]
+path_names=["HLT_L1DoubleMu0","HLT_L1FatEvents","HLT_L1SingleEG10","HLT_L1SingleEG15","HLT_L1SingleJet10erHE","HLT_L1SingleJet12erHE","HLT_L1SingleJet16","HLT_L1SingleJet200","HLT_L1SingleJet20","HLT_L1SingleJet35","HLT_L1SingleJet8erHE","HLT_L1SingleMu3","HLT_L1SingleMu5","HLT_L1SingleMu7","HLT_L1SingleMuCosmics","HLT_L1SingleMuOpen_DT","HLT_L1SingleMuOpen","HLT_L2DoubleMu23_NoVertex","HLT_L2Mu10_NoVertex_NoBPTX3BX","HLT_L2Mu10_NoVertex_NoBPTX","HLT_L2Mu40_NoVertex_3Sta_NoBPTX3BX","HLT_L2Mu45_NoVertex_3Sta_NoBPTX3BX","HLT_Physics"]
 
 width = args.width
 count = 0
