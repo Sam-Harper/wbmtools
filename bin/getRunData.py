@@ -26,23 +26,26 @@ def convert_to_ranges(vals):
 
 import argparse
 parser = argparse.ArgumentParser(description='dumps informatation about the runs ')
-parser.add_argument('runs',nargs="+",help='runs ')
-parser.add_argument('--grl',required=False,help='good lumi list, overrides runs')
+parser.add_argument('--runs',required=False,nargs="+",help='runs to output')
+parser.add_argument('--grl',required=False,help='good lumi list')
 parser.add_argument('--out_basename','-o',help='output base name (outputs <out_basename>_runInfo.json, <out_basename>_l1prescales.json, <out_basename>_hltprescales.json',required=True)
 args = parser.parse_args()
 
 wbmparser=WBMParser()
 
 runs = []
-runs=wbmutil.get_runs_from_fills("2018.01.01","2019.01.01",wbmparser)
-#runs = args.runs
+
+if args.runs is not None and args.grl is not None:
+    print "args error, --runs and --grl are mutually exclusive options"
+    sys.exit()
+if args.runs is not None:
+    runs = args.runs
 if args.grl is not None:
     with open(args.grl) as f:
         good_lumis = json.load(f)
         runs = good_lumis.keys()
-#else:
-#    runs = args.runs
-
+if runs == []:
+    runs=wbmutil.get_runs_from_fills("2018.01.01","2019.01.01",wbmparser)
 runs.sort()
 
 runs_data = {}
