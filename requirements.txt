@@ -1,0 +1,2 @@
+termcolor
+python-cern-sso-krb
