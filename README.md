@@ -92,5 +92,4 @@ Once you have finished, you can return to the normal python env but doing the fo
 ```
 deactivate #puts us back to the normal python env, 
 ```    
-  
-### Output
+
