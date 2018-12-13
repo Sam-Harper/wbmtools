@@ -113,6 +113,9 @@ for index,run in enumerate(runs):
     run_data["l1_menu"] = runinfo["l1Menu"]
     run_data["trig_mode"] = runinfo["trigKey"]
     run_data["fill"] = runinfo["fill"]
+    run_data["lumi"] = runinfo["lumi"]
+    run_data["start"] = runinfo["start"]
+    run_data["end"] = runinfo["end"]
     run_data["cmssw_version"] = runinfo["cmsswVersion"]
     runs_data[run] = run_data
 
