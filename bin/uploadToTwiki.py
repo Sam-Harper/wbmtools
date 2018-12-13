@@ -3,7 +3,6 @@
 import wbmtools.wbmparser
 import requests
 import argparse
-import xml.etree.ElementTree
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='uploads file to twiki, note it doesnt have the most robust error checking...')
